@@ -1,0 +1,76 @@
+#top{
+	text-shadow:2px 2px 5px, 2px 2px 20px ;
+	
+	}
+.nav {
+	padding:5px;
+	font-family:helvectia;
+	}
+.info {
+	font-family: sans-serif;
+	font-size: 15px
+	}
+#bottom{
+	font-family: verdana;
+	font-size:20px;
+	background-color: #d9f1ff;
+	text-shadow: 2px 2px 5px;
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+	}
+#addQual {
+	list-style-type:none;
+	padding:5px;
+	}
+body{
+	background:#F0F8FF;
+	text-align:center;
+	font-family:helvectia;
+	color: #696969;
+	padding:20px;
+	margin-top:20px;
+	}
+h1{
+	
+	font-family:georgia;
+	}
+h2 {
+	text-align:center;
+	}
+ul{
+	text-align:center;
+	display:inline-table;
+	list-style:square;	
+	}
+.listSkill {
+	text-align:left;
+	padding-left:50px;
+
+	}
+
+/*Media query allows page format to change 
+  from bordered columns to border free rows when
+  window width reduced below 1000px.
+Flexbox tool used to split div containers into 3 columns 
+(education, experience & skills).
+Justify-content used to create space between div containers with suitable 
+flexi-basis of 30% used for box class allowing spacing to be seen*/
+
+@media(min-width:1000px){
+.container1 div{
+	border: 2px grey solid ;
+	border-radius: 15px;
+	padding:5px;
+	}
+.container1 {
+	display: flex ;
+	margin: 5px;
+	justify-content:space-around;
+	}
+}
+	.box1 {
+	flex-basis: 30%;
+	
+	}
