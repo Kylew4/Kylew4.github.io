@@ -3,74 +3,131 @@
 	<head>
 	<!--- Tab title and link to style sheet--->
 		<title>My CV</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../style/style.css"/>
 	</head>
 <body>
-	<!--- Header containing name, profile picture, email address and nav links--->
-	<header>
-	<!--- Name and  profile picture--->
-		<h1 id="top">Kyle Williams, <abbr title="Bacholor of Science"> BSc.</abbr> <abbr title="Certified Cardiac Device Specialist">CCDS. </abbr><br></h1>
-			<a href="../images/profile.jpg" title="Profile picture" alt="Profile Picture" ><img src="../images/profile.jpg" alt="Profile Picture" title="Profile Picture" height="400"></a>
-		<address>
-	<!--- Address--->
-		<h3> E-mail address: 
-		<a href="mailto:kyle_w@live.co.uk"> kyle_w@live.co.uk</a> 
-		</h3>
-		<h3> 10 Dealg Ban, Ladysbridge, Co. Cork </h3>
-		</address>
-	<!--- Nav links--->
-		<a href="#education" class="nav">Education</a><a href="#experience" class="nav">Experience</a><a href="#skills" class="nav">Skills</a> <a href="../index.html" class="nav">Cover Letter</a>
-	</header>
+	<!---1st row with 3 columns containing profile picture name and contract details, responsive design stacking at smaller window sizes --->
+	<div class="container">
+		<div class="row bg-light">
+			<div class="col-lg-2 show">
+				<a  href="../images/profile.jpg" title="Profile picture" alt="Profile Picture" ><img src="../images/profile.jpg" alt="Profile Picture" title="Profile Picture"></a>
+			</div>
+			<div class="col-lg-7 show">
+				<h1 id="top">Kyle Williams, <abbr title="Bacholor of Science"> BSc.</abbr> <abbr title="Certified Cardiac Device Specialist">CCDS. </abbr><br></h1>
+			</div>
+			<div class="col-lg-2 show">
+				<address>
 	
-	<hr width="500">
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<!--- 3 containers with experince, education and skills--->
-	<div class="container1">
-		
-		<!--- =Education div box--->
-		<div class="box1">
-			<h2 id="education"><u>Education</u></h2>
-			<p class="info"> <b>BSc Clinical Physiology - Middlesex University, 2013</b> <br>
-			Spent 4 years studing clinical physiology part time while working full time in a NHS cardiac diagnostics department. Worked to understand how to perform the relevant tasks of a clinical physiologist. Studying involved numerous clinical and scientific modules combining both classroom based leactures with self driven theory learning and practical lab based activites.</P>
-			<p class="info"> <b>BSc Applied Health an Exercise Science - University of Glamorgan, 2008</b><br>
-			3 year full time qualification, designed to give a wide range of knowledge regarding human performance and the associated physiology which drives this with an emphasis on the applied performance setting and its measurement within the lab.</p>
+					<h3> E-mail address: 
+					<a href="mailto:kyle_w@live.co.uk"> kyle_w@live.co.uk</a> 
+					</h3>
+					<h3> 10 Dealg Ban, Ladysbridge, Co. Cork </h3>
+				</address>
+			</div>
 		</div>
-		<!--- Experience div box--->
-		<div class="box1">
-			<h2 id="experience"><u>Experience</u></h2>
-			<p class="info">Territory Manager, currently leading a sub team of 3 employees.
-			<b>Motivated</b> account manager possessing <b><u>5 years experience within the medical device industry</b></u>. 
-			Currently interested in expanding my commercial and management experience to further improve my skill set as a territory manager. 
-			Strong clinical background with experience working both as a technical support representative and front line clinical staff member within the field of cardiology. 
-			Has recently taken control of local marketing activites running numerous added value porgammes while completing a level 4 qualification with <abbr title="Chartered Institute of Marketing"> CIM </abbr>
-			Studied clinical physiology with Middlesex University while working full time at Queen Alexandra Hospital, Portsmouth. 
-			<b><u>Certified Cardiac Device Specialist (CCDS) with IBHRE.</b></u></p>
+	<!--- 2nd row with 1 column containing nav bar with responsive button and row format at smaller window sizes contains home link tab and link to profile page --->
+		<div class="row">
+			
+			<div class="col-lg-12 show">
+				
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					
+					
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="../index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="profile.html">Profile</a>
+								</li>
+							</ul>
+        
+						</div>
+					</div>
+				</nav>
+			</div>
 		</div>
-		<!--- Skills list div box--->
-		<div class="box1">
-			<h2 id="skills"><u>Skills</u></h2>
-			<p>
-				<ul class="listSkill">
-					<li class="info">Good Communicator</li>
-					<li class="info">Confident problem solver</li>
-					<li class="info">Excellent team player</li>
-					<li class="info">Experinced Negotiator</li>
-				</ul>
-			</p>
+		<!--3rd row, 1 column containing Accordion dropdown piece with education, experince and skills accross 3 different drop down menu's -->
+		<div class="row">
+			<div class="col-lg-12 show">
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Education
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<h2 id="education"><u>Education</u></h2>
+								<p class="info"> <b>BSc Clinical Physiology - Middlesex University, 2013</b> <br>
+								Spent 4 years studing clinical physiology part time while working full time in a NHS cardiac diagnostics department. Worked to understand how to perform the relevant tasks of a clinical physiologist. Studying involved numerous clinical and scientific modules combining both classroom based leactures with self driven theory learning and practical lab based activites.</P>
+								<p class="info"> <b>BSc Applied Health an Exercise Science - University of Glamorgan, 2008</b><br>
+								3 year full time qualification, designed to give a wide range of knowledge regarding human performance and the associated physiology which drives this with an emphasis on the applied performance setting and its measurement within the lab.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Experience
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<h2 id="experience"><u>Experience</u></h2>
+									<p class="info">Territory Manager, currently leading a sub team of 3 employees.
+									<b>Motivated</b> account manager possessing <b><u>5 years experience within the medical device industry</b></u>. 
+									Currently interested in expanding my commercial and management experience to further improve my skill set as a territory manager. 
+									Strong clinical background with experience working both as a technical support representative and front line clinical staff member within the field of cardiology. 
+									Has recently taken control of local marketing activites running numerous added value porgammes while completing a level 4 qualification with <abbr title="Chartered Institute of Marketing"> CIM </abbr>
+									Studied clinical physiology with Middlesex University while working full time at Queen Alexandra Hospital, Portsmouth. 
+									<b><u>Certified Cardiac Device Specialist (CCDS) with IBHRE.</b></u></p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Skills
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<h2 id="skills"><u>Skills</u></h2>
+								<p>
+									<ul class="listSkill">
+										<li class="info">Good Communicator</li>
+										<li class="info">Confident problem solver</li>
+										<li class="info">Excellent team player</li>
+										<li class="info">Experinced Negotiator</li>
+									</ul>
+								</p>
+							</div>
+	  
+						</div>
+					</div>
+	
+	
+				</div>
+				<!---3rd row with 1 column containing footer, with return to top link and link to external linked in page--->
+				<div class="row">
+					<div class="col-lg-12 show"id="bottom">
+						<h4>
+							Feel free to connect with me on LinkedIn <a href="https://www.linkedin.com/in/kyle-williams-0553631b7/" target="_blank">here</a> 
+						</h4>
+						<a href="#top">Click here</a> to return to top of page.
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!--- Bottom of page div with link back to top and link to external LinkedIn page in new window--->
-	<div id="bottom">
-		<h4>
-		Feel free to connect with me on LinkedIn <a href="https://www.linkedin.com/in/kyle-williams-0553631b7/" target="_blank">here</a> 
-		</h4>
-			<a href="#top">Click here</a> to return to top of page.
-	</div>
-	
 </body>
-</html>
+</html>	

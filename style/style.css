@@ -1,3 +1,17 @@
+body {
+	background-color:#F0F8FF;
+	text-align:center;
+	font-family:helvectia;
+	color: #696969;
+	padding:20px;
+	margin-top:20px;
+	}
+.row {
+	margin-top: 100px;
+	min-height:100px;
+	justify-content:space-between:
+}
+
 #top{
 	text-shadow:2px 2px 5px, 2px 2px 20px ;
 	
@@ -24,14 +38,7 @@
 	list-style-type:none;
 	padding:5px;
 	}
-body{
-	background:#F0F8FF;
-	text-align:center;
-	font-family:helvectia;
-	color: #696969;
-	padding:20px;
-	margin-top:20px;
-	}
+
 h1{
 	
 	font-family:georgia;
