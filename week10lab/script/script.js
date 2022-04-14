@@ -5,10 +5,10 @@ var average;
 var grade = [];
 
 function go(){
-	gradeNumber= parseInt(prompt("Enter your number of grades here:"));
+	gradeNumber= parseInt(prompt("Enter your number of modules here:"));
 	
 	for (i=0; i<gradeNumber; i++){
-		grade[i] = parseInt(prompt("Enter grade number " + (i + 1) + " here:"));
+		grade[i] = parseInt(prompt("Enter mark for module " + (i + 1) + " here:"));
 			if(grade[i] >= 0 && grade[i]<= 100){
 				continue;
 			}
@@ -20,11 +20,11 @@ function go(){
 	sum = sum + grade[i];
 	}
 	average = sum/gradeNumber;
-	document.getElementById("main").innerHTML += ("Your average grade across all " + gradeNumber + " modules is " + average + ". <br/>");
+	document.getElementById("main").innerHTML += ("Your average mark across all " + gradeNumber + " modules is " + average + ". <br/>");
 	
 	
 for (i=0; i<gradeNumber; i++){
-	document.getElementById("main").innerHTML += ("Your grade for module " + (i + 1) + " is " + grade[i] + ". Your grade is ");
+	document.getElementById("main").innerHTML += ("Your mark for module " + (i + 1) + " is " + grade[i] + ". Your grade is ");
 	if (grade[i] >= 90 && grade[i] <= 100){
 		document.getElementById("main").innerHTML += ("A. <br/>");
 		}
