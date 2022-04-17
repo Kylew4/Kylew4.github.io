@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	<!--head including title, meta data, stylesheet link & bootstrap sript link  --->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Abbott NexGen Platform
+		</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/style.css"/>
+	</head>
+	<body>
+	<!--- initial heading with logo picture and nav bar menu built with bootstrap.
+	Responsive design stacks elements of navbar when screen size reduced, nav bar is fixed and scrolls with screen --->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		<!--- Abbott logo redirects to main company website on click in new window --->
+			<a class="navbar-brand" href="https://www.abbott.com/" target="_blank"><image src="images/logo.png" title="Abbott Medical" alt="Abbott logo"></a>
+			<!--- Responsive NavBar button which appears on screen collapse --->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!--- Navbar links to relevant elements on page, dropdown bar added with link to contact reps section and option to email company - dummy e-mail used as example - option to visit abbott home page takes visotr to abbott page in same window --->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#top">About Gallant</a>
+							</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#features">Features & Benefits</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#formTitle">Contact Abbott</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							More information
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="https://www.abbott.com/">Visit Abbott</a></li>
+								<li><a class="dropdown-item" href="mailto:Queries@companyname.company">E-mail Abbott</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#localRep">Find Local Rep</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br/>
+		<br/>
+		<!--- Bootstrap row, contains image of product in one column which opens in seperate window on click,in second column is introduction message. 
+		      Columns stack with reduced screen size using botstrap responsiveness  --->
+		<div class="container-fluid profile">
+			<div class="row file">
+				<div class="col-lg-5 picture">
+					<a href="images/GallantPhoto.png"><img class="devicepic" src="images/GallantPhoto.png" title="Gallant ICD" alt="Gallant product range"></a>
+				</div>
+				
+				<div id="about" class="col-lg-7 intro bg-info text-light">	
+					<br/>
+					<br/>					
+					
+					<h2><strong>The next generation of connectivity...</strong></h2>
+					<p>Welcome to the worlds first <strong>App based</strong> ICD.<br/>
+					   With a whole new suite of features designed to keep your<br/>
+					   patient's safer, Abbotts <strong>NexGen</strong> range<br/>
+					   of Gallant devices aim to deliver industry leading protection<br/>
+					   with constant assurance you can keep connected with your patient <br/>
+					   through Gallant's intuitive app based remote monitoring system <br/>
+					   providing fast and accurate diagnostic date to your clinic immediately.
+					  </p>
+				
+					
+				</div>
+			</div>
+			<!--- Single accordian element using bootstrap with additional info about Abbott when opened --->
+			<div class="row">
+				<div class="col-lg-12 show">
+					<div class="accordion" id="introAccordian">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="welcomeHeading">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<b>About Abbott</b>
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapsed collapse" aria-labelledby="headingOne" data-bs-parent="#introAccordian">
+								<div class="accordion-body bg-info text-light">
+									<h2 id="welcome">Abbott - A promise for a better life</h2>
+									<p class="info">For over 130 years Abbott has been dedicated to improving patient outcomes</br>
+									through innovative healthcare solutions for its patients.</br>
+									Initially founded by Wallace Calvin Abbott in 1888, as a small pharmaceuticals manufacturer,</br>
+									today Abbott is a global company with a diversified portfolio ranging from nutritional supplements</br>
+									to invasive medical deivce products. The gallant ICD will be a key piece in the Abbott portfolio for years</br>
+									to come.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--- Div containing 6 thumbnail pictures with hidden text elements which display/hide on click using JavaScript, elements provide additional details about features/benefits of product. CSS  hover function reveals text wrap on image advising reader to click image to reveal text  --->
+		<div id="features" class="container-fluid thumbnails bg-dark text-light">
+			<div class="row bg-dark">
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction1()"><div class="fullwrap" ><img class="thumbnail"src="images/connectivity.jpg" alt="Connectivity"><div class="fullcap">Read more...</div></div></button>
+					<h5>Connectivity</h5>
+				<p id="connectivity" class="textbox">Abbott's Gallant devices provide unrivalled remote monitoring potential,  
+															 through the worlds first bluetooth based ICD.
+															 Patients can easily stay connected via smartphone app
+															 ensuring quick and semless data transmission to their 
+															 preferred healtchare provider.</p>
+				</div>	
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction2()"><div class="fullwrap" ><img class="thumbnail"src="images/design.jpg" alt="Design"><div class="fullcap">Read more...</div></div></button>
+					<h5>Physiological design</h5>	
+					<p id="design" class="textbox">With its new physiological curve design, Gallant provides
+					superior comfort and fit for your patients at implant. The curvature of the device
+					naturally matches that of the patients chest for ease of positioning at implant leading to
+					reduced device protrusion and pocket imflammation.</p>
+				</div>
+			</div>
+			<div>
+			</div>
+			<div class="row bg-dark">
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction3()"><div class="fullwrap" ><img class="thumbnail" src="images/vf.jpg" alt="Ventricular Fibrillation"><div class="fullcap">Read more...</div></div></button>
+					<h5>VF therapy assurance</h5>
+					<p id="therapyAssurance" class="textbox">Patients with fast unstable ventricular arrhythmias are 
+					more likely to experince failed defibrilltaion shocks due to degredation of arrhythmia while tachy detection occurs.
+					VF therapy assurance counters this with an enhanced sensing algorithm designed to detect
+					deteriorating arrrhythmias quickly and delivering treatment before they become irreversible.</p>
+				</div>
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction4()"><div class="fullwrap" ><img class="thumbnail"src="images/shock.jpg" alt="High Voltage sign"><div class="fullcap">Read more...</div></div></button>
+					<h5>40J delivered shock</h5>	
+					<p id="deliveredShock" class="textbox">Abbott's new physiological design comes with 40J delivered shock capabilities.
+					This high level energy delivery ensures powerful reversion of life threatening tachy-arrhythmias.
+					With Abbotts unique two tier capcitior system, charge times can be reduced
+					resulting in shorter times from arrhythmia detection to delivery of life saving therapies</p>
+				</div>
+			</div>
+			<div>		
+			</div>
+			<div class="row bg-dark">
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction5()"><div class="fullwrap" ><img class="thumbnail"src="images/swimming.jpg" alt="Synchronised swimming"><div class="fullcap">Read more...</div></div></button>
+					<h5>Sync AV+</h5>
+					<p id="syncAV" class="textbox">Gallant CRT-D's have been enhanced with Abbott's Sync AV+ fusion algorithm
+					designed to improve your heart failure patient outcomes, Sync AV+ looks to fuse Patients
+					intrinsic right bundle activity with bi-ventricular pacing to produce a signficantly narrower QRSd 
+					compared with traditional bi-V pacing. Sync AV+'s new percentage based timing ensure a better physiologic 
+					function at varying heart rates.</p>
+				</div>
+				<div class="col-lg-6 thumb">
+					<button title="button" onclick="clickFunction6()"><div class="fullwrap" ><img class="thumbnail"src="images/intuitive.jpg" alt=" image"><div class="fullcap">Read more...</div></div></button>
+					<h5>Intuitive Programming</h5>
+					<p id="programming" class="textbox">The Gallant platform keeps Abbott's recongised and intutitive programming
+					outlay through its Merlin programmer platform, helping improve familiarity and ease of navigation 
+					when interrogating and optimizing your patients device.</p>					
+				</div>
+			</div>
+		</div>
+		<!--- Contact form with title. Asks user for name email telephone number and text area to leave comment. HTML and JS validation used so validation requested independant of browser used --->
+		<div id="contact" class="container-fluid bg-info">
+			<div class="row  bg-info contactForm">
+				<div class="col-lg-12 form bg-info text-light">
+				
+		
+		 
+					<h1 id="formTitle" class="contactTitle">Contact Abbott</h1>       
+					<p id="description" class="contactTitle"> <i>For more information on Gallant, please fill out and submit below form.</i></p>
+   
+    
+    
+  
+					<div id="form">
+						<form id="feedback-form" action="" name="myForm" method="POST" onsubmit="return validateForm()">
+							<p>
+								<label id="name-label">
+								<strong>Name</strong></label>
+								<input id="name" name="fullName" type="text" placeholder="Name" required>
+							</p>
+							<p> <label id="phone">
+								<strong>Contact No.</strong></label>
+								<input id="contactNumber" name="phone" type="tel"  placeholder="Contact Number" required></p>
+							<p> <label id="phone">
+								<strong>E-mail Address</strong></label>
+								<input id="email" name="email" type="email" placeholder="E-mail address" required></p>
+							<p><label id="comments"><strong>Comments</strong></label></p>
+								<textarea id="textarea" placeholder="Please insert comments/questions here...." rows="6" cols="30" required></textarea>
+							 <p> <button id="submit" input="submit" name="submit-button" type="submit">Submit Feedback</button></p>
+						
+						</form>
+						</br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- Bootstrap row with 5 columns each with button to find local rep details. On click JS used to display relevant rep details using alert window --->
+		<div id="localRep" class="container-fluid bg-info text-light">
+			<div class="row bg-info contactForm">
+				<div class="col-lg-12">
+				
+				</br>
+				</br>
+				</br>
+					<h1 id="rep"> What to contact someone locally?</h1> 
+					<p><i>Please select your region to find contact details for your local sales representative</i></p>
+					<img id="salesSupport" src="images/support.jpg" title="Local support" alt="Sales-support-image">
+				</div>
+			</div>
+				<div class="row bg-info areas contactForm">
+				<div class="col-xl-1">
+				</div>
+				<div class="col-xl-2 territory">
+				<p>England</p>
+				<button id="england" class="repButton" type="button" onclick="repEngland()">Show Rep details</button>
+				</div>
+				<div class="col-xl-2 territory">
+				<p>Scotland</p>
+				<button id="scotland" class="repButton" type="button" onclick="repScotland()">Show Rep details</button>
+				</div>
+				<div class="col-xl-2 territory">
+				<p>Wales</p>
+				<button id="wales" class="repButton" type="button" onclick="repWales()">Show Rep details</button>
+				</div>
+				<div class="col-xl-2 territory">
+				<p>N Ireland</p>
+				<button id="nireland"class="repButton"  type="button" onclick="repNireland()">Show Rep details</button>
+				</div>
+				<div class="col-xl-2 territory">
+				<p>Rep of Ireland</p>
+				<button id="roi" class="repButton" type="button" onclick="repROI()">Show Rep details</button>
+				</div>
+				<div class="col-xl-1">
+				
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--- Footer with company logo --->
+		<div>
+			<div id="footer" class="row bg-dark text-light">
+				<div class="col-lg-3">
+				
+				</br>
+				</br>
+				<image src="images/logo.png" title="Abbott Medical" alt="Abbott logo">
+				</div>
+				<div class="col-lg-9">
+				
+				</div>
+			</div>
+		</div>
+		
+		<!--- bootstrap and JS file links at bottom of page to optimise page rendering --->
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+				<script src="script/script.js"></script>
+	</body>
+<html>
