@@ -15,7 +15,11 @@ h5{
 	width: 300px;
 }
 
+.formInput{
+float:left;
+width:60%;
 
+}
 
 .textbox {
 	display: none;
