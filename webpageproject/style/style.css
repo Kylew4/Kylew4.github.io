@@ -19,8 +19,7 @@ h5{
 
 .textbox {
 	display: none;
-	text-align:justify;
-	margin-left: 100px;
+	text-align:center;
 	padding: 15px;
 	
 }
@@ -42,7 +41,7 @@ button {
 }
 form {
 	/* form desing and styling with border effect */
-  display:  ;
+  
   align-items: center;
   justify-content: center;
   width:90%;
@@ -55,12 +54,7 @@ form {
   font-size: 21px;
     
 }
-textarea {
-  font-size:22px;
-  resize: vertical;
-   border-radius: 5px;
-  
-}
+
 #contact{
 	padding-left:0px;
 	padding-right:0px;
@@ -73,7 +67,6 @@ textarea {
   width:100%;
   height:4em;
   border-radius:10px;
-  font-family: ;
   font-size:17px;
   color: #2a2b33;
   background-color: white;
@@ -88,11 +81,11 @@ textarea {
 
 }
 #salesSupport{
-	width: 400px;
+	width: 30%;
+	min-width:350px;
 }
 #localRep {
 	text-align:center;
-	
 	padding-left:0px;
 	padding-right:0px;
 }
@@ -104,12 +97,21 @@ textarea {
 	
 }
 #textarea{
-	justify-content: center;
+	float:left;
+  width:90%;
+  min-height: 150px;
+  margin-bottom:50px;
+  font-size:22px;
+  resize: vertical;
+  border-radius: 5px;
 }
 .areas{
 	padding-top: 75px;
 	
-	
+}
+.imageButton{
+  background-color: transparent;
+  border: none;
 }
 .contactTitle{
 	text-align:center;
@@ -121,7 +123,6 @@ textarea {
         display: inline-block;
         background-color: white;
         border-radius: 10px;
-        border:;
         color:  #5bc0de;
         text-align: center;
         font-size: 12px;
@@ -129,7 +130,7 @@ textarea {
         width: 150px;
         cursor: pointer;
         margin: 5px;
-		font-weight: bold;
+		    font-weight: bold;
 }
 .territory{
 	font-size: 21px;
