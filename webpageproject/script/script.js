@@ -5,7 +5,7 @@ const england = ["England Rep", "Barry Smith", "Tel:01000 999 000000", "E-mail:B
 const scotland = ["Scotland Rep", "Dougie Anderson", "Tel:01700 990 000000", "E-mail:DAnderson@sales.companyname"];
 const wales = ["Wales Rep", "Di Roberts", "Tel:01000 722 000001", "E-mail:DiRoberts@sales.companyname"];
 const nireland = ["Northern Ireland Rep", "Tiarnan Carragher", "Tel:01000 990 00005", "E-mail:TCarragher@sales.companyname"];
-const roi = ["Republic of Ireland Rep", "Aisling Barry", "Tel:01000 666 00050", "E-mail:Aislingbarry1@sales.companyname"];
+const roi = ["Republic of Ireland Rep", "Aisling Barry", "Tel:01000 666 00050", "E-mail:Aislingbarry@sales.companyname"];
 
 /* 6 functions titles clickFunction 1-6, these perform the show/hide text function for 6 thumbnail 
 pictures in features/benefits part of webpage. */
