@@ -95,7 +95,8 @@ on every refresh after form submission stating returning to page might trigger r
 	/* Form validation through JS, will return alert message and block form submission if details not entered correctly as requested,
 Form submitted successfully message delivered on for being entered and submitted correctly	*/
 	function validateForm(){
-		var x=document.forms["myForm"]["fullName"].value;
+    var w=document.forms["myForm"]["textarea"].value;
+    var x=document.forms["myForm"]["fullName"].value;
 		var y=document.forms["myForm"]["phone"].value;
 		var z=document.forms["myForm"]["email"].value;
 if (x==null || x=="")
@@ -125,8 +126,19 @@ if (x==null || x=="")
    return false;
 
    }
+   else if (w==null || w=="")
+
+   {
+
+   alert("Text area must be filled out");
+
+   return false;
+
+   }
    else {
 	   alert("Form submitted successfully");
+
+     return true;
    }
    
 	}
